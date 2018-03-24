@@ -11,9 +11,20 @@ You can see the gallery here: [pandelisz.github.io/bmag-infinite-gallery](https:
 
 This project uses react and you can build and adapt it locally.
 
+```
+yarn install
+```
+
+
+To build locally in development mode:
 ```sh
 yarn start
 ```
 
-To build locally in development mode.
 
+
+## Deploying updates to gh-pages
+
+```sh
+yarn run deploy
+```

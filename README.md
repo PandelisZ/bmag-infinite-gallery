@@ -5,6 +5,8 @@
 
 This app aims to display the BMAG's archive of photographs in an easy to consume format. You can scroll infintely through the archive and view rarely seen pieces.
 
+You can see the gallery here: [pandelisz.github.io/bmag-infinite-gallery](https://pandelisz.github.io/bmag-infinite-gallery/)
+
 ## Contributing
 
 This project uses react and you can build and adapt it locally.

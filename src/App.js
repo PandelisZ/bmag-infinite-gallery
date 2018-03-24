@@ -62,7 +62,7 @@ class App extends Component {
     work.forEach((image) => {
       items.push(
         <div key={image.imageid.toString()} className="d-flex align-items-start p-3" >
-          <div onClick={() => {this.showLightbox(image.imageid-1)}} className="art-container">
+          <div onClick={() => {this.showLightbox(image.imageid-1)}} className="art-container interactive">
             <img src={image.imagethumb} alt={image.title} width="400" />
             <p className="title">{image.title}</p>
           </div>

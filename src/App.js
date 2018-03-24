@@ -19,8 +19,10 @@ class App extends Component {
       hasMoreItems: true,
       nextHref: null,
       photoIndex: 0,
-      isOpen: true,
+      isOpen: false,
     };
+
+    this.showLightbox = this.showLightbox.bind(this);
   }
 
   loadItems(page) {
@@ -42,6 +44,13 @@ class App extends Component {
       });
   }
 
+  showLightbox(index) {
+    this.setState({
+      photoIndex: index,
+      isOpen: true,
+    })
+  }
+
   render() {
 
     const loader = <div className="loader">Loading ...</div>;
@@ -53,7 +62,7 @@ class App extends Component {
     work.forEach((image) => {
       items.push(
         <div key={image.imageid.toString()} className="d-flex align-items-start" >
-          <div onClick=>
+          <div onClick={() => {this.showLightbox(image.imageid-1)}}>
             <img src={image.imagethumb} alt={image.title} width="400" />
             <p className="title">{image.title}</p>
           </div>
